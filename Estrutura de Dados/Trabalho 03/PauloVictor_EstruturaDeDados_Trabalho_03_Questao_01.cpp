@@ -16,16 +16,21 @@ int main(void){
 	};
 	
 	struct aluno alunos[4];
+	
 	printf("\n---------- Cadastro de Alunos -----------\n\n\n");
+	
 	for (int i=1; i<=5; i++){
 		printf("\n\nAluno N° %d\n\n\n", i);
 		
 		printf("Nome do aluno ......: ");
 		scanf("%s", alunos[i].nome);
+		
 		printf("Informe a matricula ..: ");
 		scanf("%d", &alunos[i].matricula);
+		
 		printf("Informe a 1° nota ..: ");
 		scanf("%f", &alunos[i].nota1);
+		
 		printf("Informe a 2° nota ..: ");
 		scanf("%f", &alunos[i].nota2);
 	}
@@ -37,6 +42,4 @@ int main(void){
 		printf("Matrícula ......: %d\n\n", alunos[i].matricula);
 		printf("Média ..........: %.2f\n\n" , (alunos[i].nota1+alunos[i].nota2)/2);
 	}
-	
-	return 0;
 }
